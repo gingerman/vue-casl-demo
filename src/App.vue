@@ -4,11 +4,19 @@
     <h1>For Sale</h1>
     <post
       v-for="post in posts"
-      :post="post"
-      :username="getUserName(post)"
+      :key="post"
+      v-bind:post="post"
+      v-bind:username="getUserName(post)"
       @delete-post="deletePost"
       @err="updateErr"
     ></post>
+
+<todo-item v-for="todoItem in todos"
+           v-bind:data="todoItem"
+           v-bind:key="todoItem.text"></todo-item>
+
+
+
     <div class="error" v-if="err">{{ err }}</div>
   </div>
 </template>
