@@ -16,3 +16,5 @@ npm run build
 ```
 
 Check out the article [Managing User Permissions in a VueJS App](https://vuejsdevelopers.com/2018/01/08/vue-js-roles-permissions-casl/) for more info.
+
+Taken and updated from https://github.com/anthonygore/vue-casl-demo
